@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="Description" content="Put your description here.">
+  <base href="/">
+
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      background-color: #ededed;
+    }
+  </style>
+  <title>POC Web Component</title>
+</head>
+
+<body>
+  <h2>Step Card</h2>
+  <checkbox-component colorType="blue" label="Option 1"></checkbox-component>
+  <checkbox-component colorType="green" label="Option 2"></checkbox-component>
+
+  <h2>Step Card</h2>
+  <step-card
+    StepCardtitle="Step 1"
+    description="Open your banking app and enter the PIX environment"
+  ></step-card>
+  <section-title text="OIASDJOASJID" color="#079455">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+    >
+      <path d="M21 7L9 19l-5.5-5.5L5 12l4 4L19 5l2 2z" />
+    </svg>
+  </section-title>
+
+  <script type="module" src="./out-tsc/src/components/check-box.js"></script>
+  <script type="module" src="./out-tsc/src/components/step-card.js"></script>
+  <script type="module" src="./out-tsc/src/components/section-title.js"></script>
+</body>
+
+</html>
